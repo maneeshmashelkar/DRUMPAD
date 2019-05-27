@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Drumpad</title>
+</head>
+<body>
+<div class="main">
+    <div class="heading"><i class="fas fa-drum"></i>
+        DRUMPAD 
+    </div>
+    <div class="keys" >
+        <div onclick="clicks('49')" class="key key-1">1</div>
+        <div onclick="clicks('50')" class="key key-2">2</div>
+        <div onclick="clicks('51')" class="key key-3">3</div>
+        <div onclick="clicks('52')" class="key key-4">4</div>
+
+        <div onclick="clicks('81')" class="key key-5">Q</div>
+        <div onclick="clicks('87')" class="key key-6">W</div>
+        <div onclick="clicks('69')" class="key key-7">E</div>
+        <div onclick="clicks('82')" class="key key-8">R</div>
+
+        <div onclick="clicks('65')" class="key key-9">A</div>
+        <div onclick="clicks('83')" class="key key-10">S</div>
+        <div onclick="clicks('68')" class="key key-11">D</div>
+        <div onclick="clicks('70')" class="key key-12">F</div>
+          
+        <div onclick="clicks('90')" class="key key-13">Z</div>
+        <div onclick="clicks('88')" class="key key-14">X</div>
+        <div onclick="clicks('67')" class="key key-15">C</div>
+        <div onclick="clicks('86')" class="key key-16">V</div>
+    </div>
+    <div class="control">
+        <button type="button" id="power" class="power off" onclick="powerbutton()">OFF</button>
+        <div class="volume"><input class="slider" type="range" min="0" max="100" value="50" oninput="setvolume(this.value) "><i class="fas fa-volume-mute"></i><i class="fas fa-volume-up"></i></div>
+        
+        <div class="screen" id="screen">  </div>
+    </div>
+</div>
+<audio data-key="49" src="audio/crash minor.wav"></audio>
+<audio data-key="50" src="audio/ride.wav"></audio>
+<audio data-key="51" src="audio/hihat.wav"></audio>
+<audio data-key="52" src="audio/openhat.wav"></audio>
+
+<audio data-key="81" src="audio/clap.wav"></audio>
+<audio data-key="87" src="audio/clap 2.wav"></audio>
+<audio data-key="69" src="audio/closed hat.wav"></audio>
+<audio data-key="82" src="audio/snare.wav"></audio>
+
+<audio data-key="65" src="audio/finale minor.wav"></audio>
+<audio data-key="83" src="audio/crisp korg snare.wav"></audio>
+<audio data-key="68" src="audio/tom.wav"></audio>
+<audio data-key="70" src="audio/kick.wav"></audio>
+
+<audio data-key="90" src="audio/tambourine.wav"></audio>
+<audio data-key="88" src="audio/tink.wav"></audio>
+<audio data-key="67" src="audio/tom ofalltoms.wav"></audio>
+<audio data-key="86" src="audio/boom.wav"></audio>
+<script src="Drumpad.js"></script>
+</body>
+</html>
