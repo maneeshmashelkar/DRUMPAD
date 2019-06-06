@@ -221,3 +221,24 @@ html,body{
     color: whitesmoke;
     transform: translateY(22px);
 }
+
+@media(max-width: 535px){
+    .power {
+        width: 7rem;
+    }
+    .main {
+        width:-webkit-fill-available;
+    }
+    .key {
+        padding: 30px;
+        transition: all 0.01s;
+        
+    }
+    .screen{
+        font-size: 16px;
+    }
+    .control {
+
+        width: 24rem;
+    }
+}
